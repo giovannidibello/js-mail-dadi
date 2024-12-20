@@ -21,8 +21,6 @@ for (let i = 0; i < listaEmail.length; i++) {
 
     // SE la mail fornita è presente nell'array
     if (emailUtente === listaEmail[i]) {
-        // stampo l'utente è stato invitato
-        console.log("Congratulazioni sei stato/a invitato/a!!!");
         // aggiorno la variabile trovato
         trovato = true;
     }
@@ -33,6 +31,9 @@ for (let i = 0; i < listaEmail.length; i++) {
 if (!trovato) {
     // stampo l'utente non è stato invitato
     console.log("Purtroppo non sei stato/a invitato/a!!!");
+} else {
+    // stampo l'utente è stato invitato
+    console.log("Congratulazioni sei stato/a invitato/a!!!");
 }
 
 
